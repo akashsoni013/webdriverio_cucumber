@@ -10,7 +10,7 @@ Given(/^I am on the login page$/, async function() {
 
 When(/^I enter email address and click create an account$/, async function() {
     (await $('.login')).click();
-    await (await $('#email_create')).setValue(strEmail);
+    (await $('#email_create')).setValue(strEmail);
     (await $('#SubmitCreate')).click();
 });
 
